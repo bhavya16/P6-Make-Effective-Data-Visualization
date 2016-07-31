@@ -17,9 +17,11 @@ The writeup is available [here](https://github.com/bhavya16/P6-Make-Effective-Da
 
 ###Feedback
 I shared the visualization http://bl.ocks.org/bhavya16/raw/00d1e9a61b1cd07fe1f4825f8b232988/ and I received the following feedback from my colleagues and some friends:
-
+####Feedback 1
 * Figure legend is missing. What do the blue and red dots mean? What does the area represent?
 * The title should reflect the content of figure.
+
+####Feedback 2
 * In the y axis, it says income, but the title only emphasizes occupation. also the x axis label is missing
 
 ##Resources
