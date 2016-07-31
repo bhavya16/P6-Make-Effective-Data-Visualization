@@ -24,7 +24,7 @@ I shared the visualization http://bl.ocks.org/bhavya16/6ff019c0a5c76626f45f3d9cc
 ####Feedback 2
 * In the y axis, it says income, but the title only emphasizes occupation. also the x axis label is missing
 
-After getting the feedbacks from my peer coleague i chaged my visualization to make it more clear.I changed the chart type from bar graph to bubble chart where the size of the chart shows the cedit score and the color shows the Status.(Here)[http://bl.ocks.org/bhavya16/raw/00d1e9a61b1cd07fe1f4825f8b232988/] is my final chart which is more explanatory than the previous one.
+After getting the feedbacks from my peer coleague i chaged my visualization to make it more clear.I changed the chart type from bar graph to bubble chart where the size of the chart shows the credit score and the color shows the Status.[Here](http://bl.ocks.org/bhavya16/raw/00d1e9a61b1cd07fe1f4825f8b232988/) is my final chart which is more explanatory than the previous one.
 
 ##Resources
 To better learn how dimple.js works and get examples for specific functionality, I examined many of the examples provided on the dimple.js site (http://dimplejs.org/examples_index.html).
