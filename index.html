@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
-    <script src="http://d3js.org/d3.v3.min.js"></script>
-    <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
-
+    <script src="http://d3js.org/d3.v3.min.js">
+    </script>
+    <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js">
+    </script>
     <style>
       h2 {
         text-align: center;
       }
     </style>
-
     <script type="text/javascript">
       function draw(data) {
 
@@ -25,7 +25,7 @@
 
           d3.select("body")
             .append("h2")
-            .text("Loan Summary based on major Occupation and the Income range for State Virginia")
+            .text("Income and Credit Score are most important for Predicting Loan Status for Virginia")
 
           var svg = d3.select("body")
             .append("svg")
@@ -39,7 +39,7 @@
       */
 
           var myChart = new dimple.chart(svg, data);
-          var x = myChart.addCategoryAxis("x", "Occupation");
+          var x = myChart.addCategoryAxis("x","Occupation");
           myChart.addMeasureAxis("y", "IncomeRange");
           myChart.addMeasureAxis("z", "ProsperScore");
           myChart.addSeries("LoanStatus", dimple.plot.bubble);
@@ -48,14 +48,15 @@
         };
 
     </script>
-  </head>
+    <title></title>
+</head>
 <body>
-  <script type="text/javascript">
-  /*
+    <script type="text/javascript">
+    /*
     Use D3 (not dimple.js) to load the TSV file
     and pass the contents of it to the draw function
     */
-  d3.csv("mydata1.csv", draw);
-  </script>
+    d3.csv("mydata1.csv", draw);
+    </script>
 </body>
 </html>
