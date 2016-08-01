@@ -1,7 +1,7 @@
 # P6-Make-Effective-Data-Visualization
 
 ##Summary
-This project is a grading project for a course 'Make Effective Data Visualization', a part of Udacity's nanodegree.The chart can be seen[ here](http://bl.ocks.org/bhavya16/raw/00d1e9a61b1cd07fe1f4825f8b232988/)
+This project is a grading project for a course 'Make Effective Data Visualization', a part of Udacity's nanodegree.The chart can be seen[here](http://bl.ocks.org/bhavya16/raw/00d1e9a61b1cd07fe1f4825f8b232988/)
 The visualization analyzes data on loans, taken from the peer-to-peer lending marketplace called Prosper. It focuses on few main pieces of data on loans originated from 2009 to 2013: prosper rating, which provides a measure of loan risk;Occupation and the Income Range.
 
 ##Design
