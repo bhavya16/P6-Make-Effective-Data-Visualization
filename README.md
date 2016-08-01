@@ -16,7 +16,7 @@ Findings:
 The writeup is available [here](https://github.com/bhavya16/P6-Make-Effective-Data-Visualization/blob/master/index.html)
 
 ###Feedback
-I shared the visualization http://bl.ocks.org/bhavya16/6ff019c0a5c76626f45f3d9cc9d9c8b9 and I received the following feedback from my colleagues and some friends:
+I shared [this](http://bl.ocks.org/bhavya16/6ff019c0a5c76626f45f3d9cc9d9c8b9) visualization and I received the following feedback from my colleagues and some friends:
 ####Feedback 1
 * Figure legend is missing. What do the blue and red dots mean? What does the area represent?
 * The title should reflect the content of figure.
