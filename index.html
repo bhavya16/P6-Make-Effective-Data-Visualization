@@ -10,50 +10,68 @@
       h2 {
         text-align: center;
       }
+      #container {
+        margin: auto;
+      }
+      #chartText {
+        width: 100%;
+        text-align: left;
+        margin: auto;
+      }
+      #chartTitle {
+        width: 100%;
+        text-align: justify;
+      }
+
     </style>
     <script type="text/javascript">
       function draw(data) {
-
       /*
         D3.js setup code
       */
-
           "use strict";
           var margin = 75,
               width = 1400 - margin,
               height = 600 - margin;
-
           d3.select("body")
             .append("h2")
             .text("Loan Status trend based on Income Range,Occupation and Prosper Score for Virginia")
-
           var svg = d3.select("body")
             .append("svg")
             .attr("width", width + margin)
             .attr("height", height + margin)
             .append('g')
             .attr('class','chart');
-
       /*
-        Dimple.js Chart construction code
+        Construct bubble chart with Occupation on the x-axis, Average Monthly Income on the y -axis, and average Credit Score for bubble size.
       */
-
           var myChart = new dimple.chart(svg, data);
           var x = myChart.addCategoryAxis("x","Occupation");
-          myChart.addMeasureAxis("y", "IncomeRange");
-          myChart.addMeasureAxis("z", "ProsperScore");
-          myChart.addSeries("LoanStatus", dimple.plot.bubble);
+          myChart.addMeasureAxis("y", "StatedMonthlyIncome");
+          myChart.addMeasureAxis("z", "CreditScoreRangeLower");
+          var mySeries = myChart.addSeries("LoanStatus", dimple.plot.bubble);
+          mySeries.aggregate = dimple.aggregateMethod.avg;
           myChart.addLegend(100, 10, 1100, 200, "right");
           myChart.draw();
         };
-
     </script>
     <title></title>
 </head>
 <body>
+    <div id='container'>
+            <div id='chartText'>
+                It is not always true that the person with the less monthly income are likely to default and the person with higher income always pay the loan on time.There are other factors which influence the loan status.
+            </div>
+            <div id='chartText'>
+                Some occupations without red dot did not have defaulted loans.
+            </div>
+            <div id='chartText'>
+                Circle radius/area represents Credit Score range.
+            </div>
+     </div>
     <script type="text/javascript">
     /*
-    Use D3 (not dimple.js) to load the TSV file
+    Use D3 to load the CSV file
     and pass the contents of it to the draw function
     */
     d3.csv("mydata1.csv", draw);
