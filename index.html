@@ -47,7 +47,7 @@
       */
           var myChart = new dimple.chart(svg, data);
           var x = myChart.addCategoryAxis("x","Occupation");
-          var y = myChart.addMeasureAxis("y", "StatedMonthlyIncome");
+          var y =myChart.addMeasureAxis("y", "StatedMonthlyIncome");
           y.title = "Stated Monthly Income";
           myChart.addMeasureAxis("z", "CreditScoreRangeLower");
           var mySeries = myChart.addSeries("LoanStatus", dimple.plot.bubble);
